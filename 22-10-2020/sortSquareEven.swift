@@ -4,7 +4,7 @@ let isEven = {
     (value: Int) -> Bool
     in 
 
-    if (value % 2 == 0){
+    if (value % 2 == 0){//Leave a space before the flower bracket
         return true
     }
     return false
@@ -13,7 +13,7 @@ let isEven = {
 let squareNumber = {
     (value : Int) -> Int 
 
-    in
+    in //Do not have a blank line before the 'in' statement. The parameter type declaration and 'in' should be together.
     var square = value * value
     return square
     
@@ -21,7 +21,7 @@ let squareNumber = {
 let sortNumber = {
     (value: [Int]) -> [Int]
     
-    in
+    in //Do not have a blank line before the 'in' statement. The parameter type declaration and 'in' should be together.
     var value1 = value
     value1.sort()
     return value1
@@ -38,7 +38,7 @@ let sortEvenSquare = {
             evenNumberSquareList.append(squareNumber(value))
         }
     }
-    sortNumber(evenNumberSquareList)
+    sortNumber(evenNumberSquareList) //The original array is not modified at all. So, I dont think it will print the sorted array at all.
 
     return evenNumberSquareList
 
